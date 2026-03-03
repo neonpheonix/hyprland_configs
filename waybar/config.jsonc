@@ -1,0 +1,32 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 42,
+    "margin-top": 10,
+    "spacing": 4,
+
+    "modules-left": [
+        "custom/librewolf",
+        "custom/nemo",
+        "custom/obsidian",
+        "custom/term"
+    ],
+    "modules-center": [
+        "clock",
+        "tray",
+        "hyprland/workspaces",
+        "pulseaudio",
+        "cpu",
+        "temperature",
+        "battery"
+    ],
+    "modules-right": [
+        "custom/pcode",
+        "custom/ccode",
+        "custom/jcode",
+        "custom/pen_tablet"
+    ],
+    "include": [
+        "~/.config/waybar/modules.json"
+    ]
+}
