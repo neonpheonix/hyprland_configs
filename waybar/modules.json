@@ -40,47 +40,55 @@
     },
 
     "custom/librewolf": {
-        "format": "L", 
+        "format": "", 
         "tooltip": "Open Librewolf",
         "on-click": "setsid librewolf >/dev/null 2>&1 &",
         "max-length": 3
     },
         "custom/nemo": {
-        "format": "E", 
+        "format": "", 
         "tooltip": "Open file manager",
         "on-click": "setsid nemo >/dev/null 2>&1 &",
         "max-length": 3
     },
+
         "custom/obsidian": {
-        "format": "O", 
+        "format": "🔮",
         "tooltip": "Open L",
         "on-click": "setsid /home/tiled/dirc/Obsidian-1.11.7.AppImage >/dev/null 2>&1 &",
         "max-length": 2
     },
     "custom/term": {
-        "format": "K", 
+        "format": "", 
         "tooltip": "Open kitty",
         "on-click": "setsid kitty >/dev/null 2>&1 &",
         "max-length": 3
     },
-        "custom/pcode": {
-        "format": "P", 
-        "tooltip": "Open Pycharm",
-        "on-click": "setsid /home/tiled/pycharm-2025.3.2/bin/pycharm >/dev/null 2>&1 &",
-        "max-length": 2
-    },
-        "custom/ccode": {
-        "format": "C", 
-        "tooltip": "Open Clion",
-        "on-click": "setsid /home/tiled/clion-2025.3.2/bin/clion >/dev/null 2>&1 &",
-        "max-length": 2
-    },
-        "custom/jcode": {
-        "format": "J", 
-        "tooltip": "Open idel",
-        "on-click": "setsid /home/tiled/idea-IU-253.30387.90/bin/idea >/dev/null 2>&1 &",
-        "max-length": 2
-    },
+"custom/pycharm": {
+    "format": "",
+    "tooltip": "PyCharm",
+    "on-click": "setsid /home/tiled/pycharm-2025.3.2/bin/pycharm %f >/dev/null 2>&1 &",
+    "max-length": 3
+},
+
+"custom/idea": {
+    "format": "",
+    "tooltip": "IntelliJ IDEA",
+    "on-click": "setsid /home/tiled/idea-IU-253.30387.90/bin/idea %f >/dev/null 2>&1 &",
+    "max-length": 3
+},
+
+"custom/clion": {
+    "format": "",
+    "tooltip": "CLion",
+    "on-click": "setsid /home/tiled/clion-2025.3.2/bin/clion %f >/dev/null 2>&1 &",
+    "max-length": 3
+},
+"custom/pen_tablet": {
+    "format": "",
+    "tooltip": "XP-Pen",
+    "on-click": "setsid /usr/lib/pentablet/PenTablet.sh >/dev/null 2>&1 &"
+},
 
     "temperature": {
         "interval": 10,
@@ -90,12 +98,6 @@
         "format": " {temperatureC}°C"
     },
 
-    "custom/pen_tablet": {
-        "format": "✍",  // Pen or tablet icon
-        "tooltip": "Open Pen Tablet Script",
-        "on-click": "setsid /usr/lib/pentablet/PenTablet.sh >/dev/null 2>&1 &",
-        "max-length": 2
-    },
 
     "battery": {
         "states": {
