@@ -1,33 +1,42 @@
+/* --------------------------
+   GLOBAL SETTINGS
+--------------------------- */
 * {
     font-family: "SpaceMono Nerd Font", sans-serif;
     font-size: 16px;
-    transition: background-color .3s ease-out;
+    transition: background-color 0.3s ease-out;
 }
 
 window#waybar {
-    background: transparent;  /* Keep the overall background transparent */
+    background: transparent;  /* overall bar background */
     color: #c0caf5;
     font-family: SpaceMono Nerd Font, feather;
-    transition: background-color .5s;
+    transition: background-color 0.5s;
 }
 
-/* Left and right modules - transparent background */
+/* --------------------------
+   LEFT AND RIGHT MODULES
+--------------------------- */
 .modules-left,
 .modules-right {
-    background: transparent;
     margin: 5px 10px;
     padding: 0 5px;
     border-radius: 15px;
 }
 
-/* Dark background for the center section */
+/* --------------------------
+   CENTER MODULES
+--------------------------- */
 .modules-center {
-    background: rgba(0, 0, 0, 1);  /* Dark black background for the center */
+    background: rgba(0, 0, 0, 1);  /* black container */
     margin: 5px 10px;
     padding: 0 10px;
     border-radius: 15px;
 }
 
+/* --------------------------
+   COMMON MODULES STYLING
+--------------------------- */
 #clock,
 #battery,
 #cpu,
@@ -68,9 +77,12 @@ window#waybar {
 #power-profiles-daemon:hover,
 #language:hover,
 #mpd:hover {
-    background: rgba(26, 27, 38, 0.9);  /* Hover effect with a darker background */
+    background: rgba(26, 27, 38, 0.9);
 }
 
+/* --------------------------
+   WORKSPACES
+--------------------------- */
 #workspaces button {
     background: transparent;
     font-family: SpaceMono Nerd Font, feather;
@@ -81,7 +93,9 @@ window#waybar {
     border-radius: 15px;
 }
 
-#workspaces button.active { background: #13131d; }
+#workspaces button.active {
+    background: #13131d;
+}
 
 #workspaces button:hover {
     background: #11111b;
@@ -89,20 +103,46 @@ window#waybar {
     box-shadow: none;
 }
 
-#custom-arch {
-    margin-left: 5px;
-    padding: 0 10px;
-    font-size: 25px;
-    transition: color .5s;
-}
-
-#custom-arch:hover { color: #1793d1; }
-
+/* --------------------------
+   TRAY
+--------------------------- */
 #tray {
     padding: 0 10px;
     border-radius: 15px;
 }
 
 #tray:hover {
-    background: rgba(26, 27, 38, 0.9);  /* Hover effect for tray */
+    background: rgba(26, 27, 38, 0.9);
+}
+
+/* --------------------------
+   LEFT BAR MODULES (Librewolf, Nemo, Obsidian, Kitty)
+--------------------------- */
+#custom-librewolf { padding: 8px 10px 8px 9px; background: rgba(0,0,0,1); border-radius: 15px; margin-right:2px; }
+#custom-nemo      { padding: 8px 10px 8px 10px; background: rgba(0,0,0,1); border-radius: 15px; margin-right:2px; }
+#custom-obsidian  { padding: 8px 10px 8px 9px; background: rgba(0,0,0,1); border-radius: 15px; margin-right:2px; }
+#custom-term      { padding: 8px 10px 8px 9px; background: rgba(0,0,0,1); border-radius: 15px; margin-right:2px; }
+
+/* Hover effect */
+#custom-librewolf:hover,
+#custom-nemo:hover,
+#custom-obsidian:hover,
+#custom-term:hover {
+    background: rgba(26, 27, 38, 0.9);
+}
+
+/* --------------------------
+   RIGHT BAR MODULES (PyCharm, IDEA, CLion, XP-Pen)
+--------------------------- */
+#custom-pycharm    { padding: 8px 10px 8px 9px; background: rgba(0,0,0,1); border-radius: 15px; margin-right:2px; }
+#custom-idea       { padding: 8px 10px 8px 9px; background: rgba(0,0,0,1); border-radius: 15px; margin-right:2px; }
+#custom-clion      { padding: 8px 10px 8px 9px; background: rgba(0,0,0,1); border-radius: 15px; margin-right:2px; }
+#custom-pen_tablet { padding: 8px 10px 8px 9px; background: rgba(0,0,0,1); border-radius: 15px; margin-left:2px; margin-right:2px; }
+
+/* Hover effect */
+#custom-pycharm:hover,
+#custom-idea:hover,
+#custom-clion:hover,
+#custom-pen_tablet:hover {
+    background: rgba(26, 27, 38, 0.9);
 }
