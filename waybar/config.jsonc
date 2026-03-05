@@ -21,9 +21,9 @@
         "battery"
     ],
     "modules-right": [
-        "custom/pcode",
-        "custom/ccode",
-        "custom/jcode",
+        "custom/pycharm",
+        "custom/idea",
+        "custom/clion",
         "custom/pen_tablet"
     ],
     "include": [
